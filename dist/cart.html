@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--header-->
+<header class=" bg-white shadow-sm py-3">
+    <div class="flex container justify-between items-center space-x-8 px-4">
+        <!--        nav start-->
+        <a href="index.html" class="w-32 flex-shrink-0">
+            <img src="img/logo.svg" alt="">
+        </a>
+        <!--        search-->
+        <div class="hidden md:flex w-full relative">
+            <i class='bx bx-search top-3 left-4 text-gray-400 text-2xl absolute'></i>
+            <input type="text" class="py-3 w-full border border-r-0 border-primary pl-12 pr-3 rounded-l-md focus:outline-none focus:border-2" placeholder="Search">
+            <button type="submit" class="capitalize bg-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition border border-primary">search</button>
+        </div>
+        <!--        <div class="hidden md:flex w-full relative">-->
+        <!--            <i class='bx bx-search top-3 left-4 text-gray-400 text-2xl absolute'></i>-->
+        <!--            <input type="text" class="py-3 w-full border border-r-0 border-primary pl-12 pr-3 rounded-l-md focus:outline-none focus:border-2" placeholder="Search">-->
+        <!--            <button type="submit" class="capitalize bg-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition border border-primary">search</button>-->
+        <!--        </div>-->
+
+        <div class="flex items-center space-x-4">
+            <a href="" class="relative text-center text-gray-700 hover:text-primary transition font-semibold">
+                <i class='bx bx-heart text-2xl'></i>
+                <p class="text-xs leading-3">wishlist</p>
+                <span class="absolute flex items-center justify-center right-0 -top-1 h-5 w-5 bg-primary rounded-full text-white text-xs">12</span>
+            </a>
+            <a href="" class="relative text-center text-gray-700 hover:text-primary transition font-semibold">
+                <i class='bx bx-cart text-2xl'></i>
+                <p class="text-xs leading-3">cart</p>
+                <span class="absolute flex items-center justify-center -right-2 -top-1 h-5 w-5 bg-primary rounded-full text-white text-xs">12</span>
+            </a>
+            <a href="" class="relative text-center text-gray-700 hover:text-primary transition font-semibold">
+                <i class='bx bx-heart text-2xl'></i>
+                <p class="text-xs leading-3">account</p>
+            </a>
+        </div>
+    </div>
+</header>
+<!--navbar-->
+<nav class="bg-gray-800">
+    <div class="container flex">
+        <!--        catergory-->
+        <div class="bg-primary cursor-pointer items-center px-8 py-4 relative group">
+            <i class='bx bx-menu text-white'></i>
+            <span class="capitalize ml-2 text-white ">All categories</span>
+            <div class="absolute border border-gray-300 capitalize  shadow-md left-0 divide-y divide-gray-300 divide-dashed invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-500 top-full w-full py-3 bg-white">
+                <a href="" class="flex items-center space-x-2 hover:bg-gray-200 px-4 py-2">
+                    <i class='bx bx-phone'></i>
+                    <span class="text-gray-500">asdf</span>
+                </a>
+                <a href="" class="flex items-center space-x-2 hover:bg-gray-200 px-4 py-2">
+                    <i class='bx bx-headphone'></i>
+                    <span class="text-gray-500">asdf</span>
+                </a>
+                <a href="" class="flex items-center space-x-2 hover:bg-gray-200 px-4 py-2">
+                    <i class='bx bx-microphone'></i>
+                    <span class="text-gray-500">asdf</span>
+                </a>
+                <a href="" class="flex items-center space-x-2 hover:bg-gray-200 px-4 py-2">
+                    <i class='bx bx-trophy'></i>
+                    <span class="text-gray-500">asdf</span>
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-between items-center text-sm flex-grow space-x-4 capitalize">
+            <div class="flex items-center space-x-3 pl-3">
+                <a href="" class="text-gray-200 hover:text-primary">home</a>
+                <a href="" class="text-gray-200 hover:text-primary">shop</a>
+                <a href="" class="text-gray-200 hover:text-primary">about us</a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="" class="text-gray-200 hover:text-primary">login</a>
+                <a href="" class="text-gray-200 hover:text-primary">register</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container mx-auto p-4">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Product List -->
+        <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-bold mb-4">Product</h2>
+            <div class="border-b border-gray-300 mb-4">
+                <!-- Product 1 -->
+                <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center">
+                        <img class="w-24 h-24 object-cover mr-4" src="https://via.placeholder.com/100" alt="Product Image">
+                        <div>
+                            <p class="font-bold">XB450AP EXTRA BASS HEADPHONES</p>
+                            <p class="text-red-500">$45.00</p>
+                            <p>Size: M</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <button class="text-gray-500 border border-gray-300 px-2 py-1 rounded-lg">-</button>
+                        <span class="mx-2">4</span>
+                        <button class="text-gray-500 border border-gray-300 px-2 py-1 rounded-lg">+</button>
+                    </div>
+                    <div class="text-red-500 font-bold">$45.00</div>
+                    <button class="text-gray-500"><i class="bx bx-trash"></i></button>
+                </div>
+                <!-- Product 2 -->
+                <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center">
+                        <img class="w-24 h-24 object-cover mr-4" src="https://via.placeholder.com/100" alt="Product Image">
+                        <div>
+                            <p class="font-bold">IPHONE 11 PRO MAX XR</p>
+                            <p class="text-red-500">$499.00</p>
+                            <p>Size: M</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <button class="text-gray-500 border border-gray-300 px-2 py-1 rounded-lg">-</button>
+                        <span class="mx-2">1</span>
+                        <button class="text-gray-500 border border-gray-300 px-2 py-1 rounded-lg">+</button>
+                    </div>
+                    <div class="text-red-500 font-bold">$499.00</div>
+                    <button class="text-gray-500"><i class="bx bx-trash"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-bold mb-4">ORDER SUMMARY</h2>
+            <div class="flex justify-between mb-2">
+                <p>Subtotal</p>
+                <p>$45.00</p>
+            </div>
+            <div class="flex justify-between mb-2">
+                <p>Delivery</p>
+                <p>Free</p>
+            </div>
+            <div class="flex justify-between mb-2">
+                <p>Tax</p>
+                <p>Free</p>
+            </div>
+            <div class="border-t border-gray-300 mt-4 pt-4 flex justify-between font-bold text-lg">
+                <p>TOTAL</p>
+                <p>$45.00</p>
+            </div>
+            <div class="flex items-center mt-4">
+                <input type="text" placeholder="Enter coupon" class="w-full p-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <button class="bg-red-500 text-white px-4 py-3 rounded-r-lg hover:bg-red-600 transition duration-300">APPLY</button>
+            </div>
+            <button class="w-full bg-red-500 text-white p-3 rounded-lg mt-4 hover:bg-red-600 transition duration-300">PROCEED TO CHECKOUT</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
